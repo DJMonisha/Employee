@@ -39,7 +39,7 @@ const AddEmployeeForm = () => {
     }
 
     try {
-      const response = await axios.post('http://localhost:5000/api/employees', formData);
+      const response = await axios.post('https://employee-5-73bm.onrender.com', formData);
       setSuccessMessage('Employee added successfully');
       setErrorMessage('');
     } catch (error) {
